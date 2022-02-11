@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <!-- custom google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <!-- custom css -->
+  <link rel="stylesheet" href="./css/main.css">
+
+  <title>Frontend Mentor | [Blogr]</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body class="home">
+
+  <section class="main">
+
+    <header class="primary-header flex">
+      <p class="logo">Blogr</p>
+      <button class="mobile-nav-toggle" aria-controls="primary-navigation"><span class="sr-only" aria-expanded="false">Menu</span></button>
+      <nav class="nav flex flex-1">
+        <ul id="primary-navigation nav-category flex" data-visible="false" class="primary-navigation underline-indicators flex">
+          <li class="nav-category"><a href="#">Product</a>
+            <div class="menu-sub">
+              <ul>
+                <li><a href="#">Overview</a></li>
+                <li><a href="#">Pricing</a></li>
+                <li><a href="#">Marketplace</a></li>
+                <li><a href="#">Features</a></li>
+                <li><a href="#">Integrations</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav-category"><a href="#">Company</a>
+            <div class="menu-sub">
+              <ul>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Team</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Careers</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav-category"><a href="#">Connect</a>
+            <div class="menu-sub">
+              <ul>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Newsletter</a></li>
+                <li><a href="#">LinkedIn</a></li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+        <ul class="login-navigation flex">
+          <li><a href="#">Login</a></li>
+          <li><a class="wht-btn" href="#">Sign&nbsp;Up</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="cta grid">
+      <div>
+        <h1 class="fs-700 bold">A modern publishing platform</h1>
+        <h6 class="fs-300">Grow your audience and build your online brand</h6>
+        <div class="flex center">
+          <a href="#" class="wht-btn">Start for Free</a>
+          <a href="#" class="clr-btn">Learn More</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="design">
+    <h3 class="design-header">Designed for the future</h3>
+    <div class="content grid">
+      <div class="aside">
+        <h4>Introducing an extensible editor</h6>
+        <p>
+          Blogr features an exceedingly intuitive interface which lets you focus on one thing: creating content.
+          The editor supports management of multiple blogs and allows easy manipulation of embeds such as images,
+          videos, and Markdown. Extensibility with plugins and themes provide easy ways to add functionality or
+          change the looks of a blog.
+        </p>
+      </div>
+      <div class="aside">
+        <h4>Robust content management</h6>
+        <p>
+          Flexible content management enables users to easily move through posts. Increase the usability of your blog
+          by adding customized categories, sections, format, or flow. With this functionality, you’re in full control.
+        </p>
+      </div>
+      <img src="./images/illustration-editor-desktop.svg" alt="" class="design__img">
+    </div>
+  </section>
+
+  <section class="infrastructure grid">
+    <svg xmlns="http://www.w3.org/2000/svg"><g transform="matrix(1 0 0 -1 0 1018)" fill="none" fill-rule="evenodd"><rect fill="#3E4062" x="213" y="214" width="588" height="590" rx="294"/><rect stroke="#878D92" opacity=".5" x=".5" y=".5" width="1013" height="1017" rx="506.5"/><rect stroke="#878D92" x="170.5" y="171.5" width="673" height="675" rx="336.5"/></g></svg>
+    <img src="./images/illustration-phones.svg" aria-hidden="true" class="mobile-img">
+    <div class="aside text-white">
+      <h2>State of the Art Infrastructure</h2>
+      <p>
+        With reliability and speed in mind, worldwide data centers provide the backbone for ultra-fast connectivity.
+        This ensures your site will load instantly, no matter where your readers are, keeping your site competitive.
+      </p>
+    </div>
+  </section>
+
+  <section class="details grid">
+    <img src="./images/illustration-laptop-desktop.svg" alt="" class="laptop-img">
+    <div class="aside">
+      <h4>Free, open, simple</h4>
+      <p>
+        Blogr is a free and open source application backed by a large community of helpful developers. It supports
+        features such as code syntax highlighting, RSS feeds, social media integration, third-party commenting tools,
+        and works seamlessly with Google Analytics. The architecture is clean and is relatively easy to learn.
+      </p>
+    </div>
+    <div class="aside">
+      <h4>Powerful tooling</h4>
+      <p>
+        Batteries included. We built a simple and straightforward CLI tool that makes customization and deployment a breeze, but
+        capable of producing even the most complicated sites.
+      </p>
+    </div>
+  </section>
+
+  <footer class="footer grid">
+    <p class="logo">Blogr</p>
+    <ul>
+      <li>Product</li>
+
+      <li>Overview</li>
+      <li>Pricing</li>
+      <li>Marketplace</li>
+      <li>Features</li>
+      <li>Integrations</li>
+    </ul>
+
+    <ul>
+      <li>Company</li>
+
+      <li>About</li>
+      <li>Team</li>
+      <li>Blog</li>
+      <li>Careers</li>
+    </ul>
+
+    <ul>
+      <li>Connect</li>
+
+      <li>Contact</li>
+      <li>Newsletter</li>
+      <li>LinkedIn</li>
+    </ul>
+
+  </footer>
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">stasker</a>.
+  </div>
+</body>
+</html>
